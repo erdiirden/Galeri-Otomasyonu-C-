@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35C8389D-91BD-4C2A-B464-C21B3A365767}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GaleriOtomasyonu</RootNamespace>
+    <AssemblyName>GaleriOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>6767logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aracDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aracDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="aracDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aracDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="aracDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aracDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AraçEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AraçEkle.Designer.cs">
+      <DependentUpon>AraçEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AraçSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AraçSat.Designer.cs">
+      <DependentUpon>AraçSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AraçTablosu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AraçTablosu.Designer.cs">
+      <DependentUpon>AraçTablosu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dogrulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogrulama.Designer.cs">
+      <DependentUpon>Dogrulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciKayit.Designer.cs">
+      <DependentUpon>KullaniciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AraçEkle.resx">
+      <DependentUpon>AraçEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AraçSat.resx">
+      <DependentUpon>AraçSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AraçTablosu.resx">
+      <DependentUpon>AraçTablosu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dogrulama.resx">
+      <DependentUpon>Dogrulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciKayit.resx">
+      <DependentUpon>KullaniciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="aracDataSet.xsc">
+      <DependentUpon>aracDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="aracDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aracDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aracDataSet.xss">
+      <DependentUpon>aracDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="aracDataSet1.xsc">
+      <DependentUpon>aracDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="aracDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aracDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aracDataSet1.xss">
+      <DependentUpon>aracDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="aracDataSet2.xsc">
+      <DependentUpon>aracDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="aracDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aracDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aracDataSet2.xss">
+      <DependentUpon>aracDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720giris_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriş yap login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkışbuton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anaekran.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aractablosu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aracekle1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yükle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araçsat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fotoyükle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fotoyükle1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araçlistele.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcıkayıt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcıkayıt2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayıtol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkışbuton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifremiunuttum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifremiunuttum1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcıkayıt3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="6767logo.ico" />
+    <Content Include="favicon-16x16.ico" />
+    <Content Include="logo3.ico" />
+    <None Include="Resources\6767png.png" />
+    <None Include="Resources\erdicar.jpg" />
+    <None Include="Resources\6767logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
